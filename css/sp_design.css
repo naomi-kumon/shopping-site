@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-/* sp_design.css ver1.01 : Written by syam 2016.08.xx 記 */
-/* SPサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
+/* SPサイズ共通部限定CSS */
 
 #PC_MENU{
     display: none;
@@ -61,4 +60,22 @@
 }
 footer li{
     margin: 0 1px;
+}
+
+#SEARCH_ENGINE label{
+    display: none;
+}
+
+.sub_pict{
+    width: 40%;
+    padding:15px 3%;
+    float: left;
+}
+.sub_text{
+    padding:10px 2%;
+    width:50%;
+    float:right;
+}
+.more_button{
+    text-align:left;
 }

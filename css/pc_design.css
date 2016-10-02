@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* PCサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
+/* PCのみの共通部表示限定CSS */
 
 #SP_MENU{
     display: none;
@@ -42,7 +42,7 @@ header li,header li *{
 	}
 }
 
-/* Footerの設定 */
+/* Footer */
 #PAGE_TOP{
 	text-align: right;
 }
