@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* base_design.css ver1.01 : Written by syam 2016.08.xx 記 */
+/* PCでもSPでも同じ表示・表現にしたい内容を記載していくCSS */
+
+/* 組んでいる間わかりやすいようにエリア単位で背景をつけておく */
+
+#MAIN_FIELD{background: #ddd;}
+#SUB_FIELD{background: #ccc;}
+
+/*背景設定*/
+body{
+    background: #f9f8f6;
+}
+main{
+    padding: 20px 0 !important;
+}
+a{
+  color: #524b3b;
+  text-decoration: none
+}
+a:hover{
+    color: #776d56;
+}
+
+/* 初期化し損ねている余計な余白を解除 */
+form,h1,h2,h3,h4,dl,dt,dd,ul,li{
+	margin:0; padding:0;
+}
+
+/* OpenSans Font 利用CLASSを定義 */
+header li,#PAGE_TOP,footer small{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer周りの設定 */
+footer small{
+	margin-bottom:20px;
+	text-align: center;
+	color:#b8b4ac;
+}
+#PAGE_TOP{
+	font-weight:bold;
+	padding:20px 0;
+}
+#PAGE_TOP *{
+	font-size:1.4rem;
+}
+#PAGE_TOP i{
+	margin-right:10px;
+}
+footer ul{
+	margin:0 auto 20px;
+	text-align: center;
+	padding-top:20px;
+	border-top:1px solid #e2ddd4;
+}
+footer li{
+	display:inline-block;
+	margin:0 5px;
+	padding:0 10px;
+	font-size:1.2rem;
+	background:url(../images/dot.gif) no-repeat 0 9px;
+}
