@@ -2,9 +2,6 @@
 
 /* PC SP共通部限定CSS */
 
-/* 以下、仮設定色 */
-#MAIN_FIELD{background: #ddd;}
-
 /*背景設定*/
 body{
     background: #f9f8f6;
@@ -23,6 +20,11 @@ a:hover{
 /* 初期化し損ねている余計な余白を解除 */
 form,h1,h2,h3,h4,dl,dt,dd,ul,li{
 	margin:0; padding:0;
+}
+
+/* 余計なLIのマークを初期化 */
+#CAROUSEL_SLIDER{
+	list-style: none;
 }
 
 /* OpenSans Font 利用CLASSを定義 */
@@ -103,7 +105,7 @@ input[type="image"]{
 	height:18px;
 }
 
-/* sub_box link_box 設定 */
+/*sub_box link_box設定*/
 .sub_box h4,.link_box h4{
 	background: #887f69;
 	color: #fff;

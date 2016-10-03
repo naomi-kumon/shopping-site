@@ -54,7 +54,12 @@
     <main class="container">
         <section class="row">
             <div id="MAIN_FIELD" class="nine columns">
-                左側部後から入力
+                <ul id="CAROUSEL_SLIDER" class="owl-carousel owl-theme">
+                    <li><img src="./images/top/ca_banner.jpg" alt="image"</li>
+                    <li><img src="./images/top/ca_banner2.jpg" alt="image"></li>
+                    <li><img src="./images/top/ca_banner3.jpg" alt="image"</li>
+                    <li><img src="./images/top/ca_banner4.jpg" alt="image"></li>
+                </ul>
             </div>
             
             <div id="SUB_FIELD" class="three columns">
@@ -125,41 +130,14 @@
     </footer>
 
 <!-- JQueryのベースライブラリを読み込む -->
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./js/jquery.min.js"></script>
 <!-- ハンバーガーメニューの動きを実装 -->
-<script>
-  $(function(){
-    $(document).ready(function(){
-      $("#SP_MENU_BUTTON").click(function () {
-        $("#PC_MENU").slideToggle();
-      });
-    });
-  });
-</script>
-
-<!-- リンクボックスのスライドトグルの動きを実装 -->
-<script>
-$(document).ready(function(){
-
-  $("#PAGE_LINK h4").click(function () { // id="PAGE_LINK h4"を押したら実行
-    if($(this).hasClass("openlink")){ // h4にclass="openlink"があるかないか
-      $(this).removeClass("openlink"); // classにopenlinkがついている時は、それを削除
-    }else{
-      $(this).addClass("openlink"); // classにopenlinkが無い時はopenlinkを追加
-    }
-      $("#PAGE_LINK h4 + ul").slideToggle(); // id="PAGE_LINK"の後にあるh4直後のULを表示させる
-  });
-
-  $("#CATEGORIES_LINK h4").click(function () { //id="CATEGORIES_LINK h4"を押したら実行
-    if($(this).hasClass("openlink")){ // h4にclass="openlink"があるかないか
-        $(this).removeClass("openlink"); // classにopenlinkがついている時は、それを削除
-    }else{
-      $(this).addClass("openlink"); // classにopenlinkが無い時はopenlinkを追加
-    }
-      $("#CATEGORIES_LINK h4 + ul").slideToggle(); // id="CATEGORIES_LINK"の後にあるh4直後のULを表示させる
-  });
-});
-</script>
-
+<script src="./js/spmenu.js"></script>
+<!-- リンクボックスの動きを実装 -->
+<script src="./js/linkmenu.js"></script>
+<!-- カルーセルスライダーを使うためのライブラリを読み込む -->
+<script src="./owl.carousel.2.1.0/owl.carousel.min.js"></script>
+<!-- カルーセルスライダーを使うための追加のスクリプトを読み込む -->
+<script src="./owl.carousel.2.1.0/owl.carousel.action.js"></script>
 </body>
 </html>
