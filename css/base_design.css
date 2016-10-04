@@ -174,3 +174,117 @@ input[type="image"]{
 .more_button a:hover{
 	background-color:#b9b3a4;
 }
+
+/* ItemList部分の設定 */
+.item_list  h2{
+	margin: 15px auto;
+}
+
+.item_list h2 span{
+	padding: 0 10px;
+	background: #f9f8f6;
+}
+
+#NEW_ITEMS_LIST ul{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+#NEW_ITEMS_LIST li{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap:  wrap;
+}
+
+#NEW_ITEMS_LIST li{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+#POPULAR_ITEMS_LIST li{
+	float:left;
+	list-style: none;
+}
+
+.item_list li a{
+	display: block;
+	padding:7px;
+	border:1px solid #f9f8f6;
+	background: #fff;
+}
+.item_list li a:hover{
+  opacity:0.75;
+}
+.item_list li img{
+	display:block;
+	width:100%;
+}
+.item_name,.item_price{
+	font-size:1.2rem;
+}
+.item_price span{
+	margin-right:5px;
+}
+.item_name{
+	margin-bottom:1rem;
+}
+
+/* Shopping Guide部分の設定 */
+#SHOPPING_GUIDE h2{
+	margin: 15px auto;
+}
+
+#GUIDE_WRAPPER{
+	display: -webkit-flex-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.guide_box{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+	background: #fff;
+}
+
+.guide_wrap{
+	width: 100%;
+	padding-bottom: 10px;
+	border: 1px solid #f9f8f6;
+}
+
+.guide_box h3{
+	margin: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #8a8168;
+}
+
+.guide_box dt,.guide_box dd{
+	font-size:1.2rem;
+	margin:5px 10px;
+}
+.guide_box dt{
+	font-weight:bold;
+	color: #8a8168;
+}
+#GUIDE_LEFT .guide_pict{
+	margin-left:10px;
+}
+#GUIDE_LEFT img{
+	width:50%;
+}
+#GUIDE_RIGHT img{
+	width:95%;
+}
