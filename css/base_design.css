@@ -2,6 +2,11 @@
 
 /* PC SP共通部限定CSS */
 
+body{
+	font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-weight: bold;
+}
+
 /*背景設定*/
 body{
     background: #f9f8f6;
@@ -25,11 +30,6 @@ form,h1,h2,h3,h4,dl,dt,dd,ul,li{
 /* 余計なLIのマークを初期化 */
 #CAROUSEL_SLIDER{
 	list-style: none;
-}
-
-/* OpenSans Font 利用CLASSを定義 */
-header li,#PAGE_TOP,footer small,.sans{
-	font-family: 'Open Sans', sans-serif !important;
 }
 
 /* Clearfix */
@@ -156,19 +156,12 @@ input[type="image"]{
 	width: 100%;
 }
 .more_button{
-	margin:20px auto 10px;
 	text-align: center;
+	padding-top: 15px;
 }
 .more_button a{
-	background-color: #8a8168;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
 	display:inline-block;
 	cursor:pointer;
-	color:#fff;
-	font-size:1.3rem;
-	padding:5px 25px;
 	text-decoration:none;
 }
 .more_button a:hover{
@@ -180,7 +173,7 @@ input[type="image"]{
 	margin: 15px auto;
 }
 
-.item_list h2 span{
+.item_list h2 span {
 	padding: 0 10px;
 	background: #f9f8f6;
 }

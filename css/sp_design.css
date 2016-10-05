@@ -30,7 +30,7 @@
 
 /* ハンバーガー内の隠しメニュー部分の設定 */
 #PC_MENU{
-    background:#ff6d77;
+    background: #e2ddd4;
 	padding:10px;
 	margin-top: 10px;
 }
@@ -60,6 +60,14 @@
 }
 footer li{
     margin: 0 1px;
+}
+
+.sp{
+    text-align: center;
+}
+
+.pc{
+    display: none;
 }
 
 #SEARCH_ENGINE label{
