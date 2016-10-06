@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600); /* WEBFONT-OpenSansを使えるようにする */
 @import url(./normalize.css); /* ブラウザリセットのためのCSS */
 @import url(./skeleton.css); /* CSSフレームワーク */
 @import url(./base_design.css); /* PC-SP関係なく同じ命令を当てる内容を記載したCSS */

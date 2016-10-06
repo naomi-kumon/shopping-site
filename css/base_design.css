@@ -14,6 +14,9 @@ body{
 main{
     padding: 20px 0 !important;
 }
+#MAIN_FIELD{
+	margin-bottom: 10px;
+}
 a{
   color: #524b3b;
   text-decoration: none;
@@ -165,7 +168,7 @@ input[type="image"]{
 	text-decoration:none;
 }
 .more_button a:hover{
-	background-color:#b9b3a4;
+	opacity:0.7;
 }
 
 /* ItemList部分の設定 */
@@ -280,4 +283,49 @@ input[type="image"]{
 }
 #GUIDE_RIGHT img{
 	width:95%;
+}
+
+/* パンくずリスト部分の設定 */
+#PANK{
+	margin-bottom:10px;
+	padding:0 5px 1px;
+	background:#e8e4da;
+  border:solid 3px #e8e4da;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright:5px;
+  -moz-border-radius-bottomleft:5px;
+  -moz-border-radius-bottomright:5px;
+  -webkit-border-top-left-radius:5px;
+  -webkit-border-top-right-radius:5px;
+  -webkit-border-bottom-left-radius:5px;
+  -webkit-border-bottom-right-radius:5px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+#PANK li{
+	font-size:1.2rem;
+	display: inline-block;
+	color:#8a8168;
+}
+#PANK li i{
+	margin-right:7px;
+	font-size:1.3rem;
+}
+#PANK li a{
+	color:#8a8168;
+}
+#PANK li a:hover{
+	opacity: 0.75;
+}
+#PANK li a::after{
+	content: " / ";
+}
+#PANK li:last-child a::after{
+	content:"";
+}
+
+.home_icon {
+	padding-right: 4px;
 }
