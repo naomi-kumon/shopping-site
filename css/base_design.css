@@ -204,7 +204,7 @@ input[type="image"]{
 	flex-direction:row;
 	flex-wrap: wrap;
 }
-#POPULAR_ITEMS_LIST li{
+#POPULAR_ITEMS_LIST li, #WATCH_ITEMS_LIST li, #CATEGORIES_LIST li{
 	float:left;
 	list-style: none;
 }
@@ -328,4 +328,24 @@ input[type="image"]{
 
 .home_icon {
 	padding-right: 4px;
+}
+
+/* 前に戻る＆次へ進むボタンに関する設定 */
+
+#PAGE_LIST_BUTTONS{
+	margin:15px 0 30px;
+}
+
+#PAGE_LIST_BUTTONS li{
+	list-style: none;
+}
+
+#PAGE_LIST_BUTTONS a:hover{
+	opacity: 0.75;
+}
+#BACK_BUTTON{
+	float:left;
+}
+#NEXT_BUTTON{
+	float:right;
 }
