@@ -30,8 +30,8 @@ form,h1,h2,h3,h4,dl,dt,dd,ul,li{
 	margin:0; padding:0;
 }
 
-/* 余計なLIのマークを初期化 */
-#CAROUSEL_SLIDER{
+/* リストスタイル削除 */
+#CAROUSEL_SLIDER,.item_list li,#PANK li,#WATCH_ITEMS_LIST li,#PAGE_LIST_BUTTONS li,#PRODUCTS_PICS li{
 	list-style: none;
 }
 
@@ -73,13 +73,13 @@ footer li{
 	background:url(../images/dot.gif) no-repeat 0 9px;
 }
 
-/* SUB BOXに関する設定 */
+/* SUB BOX */
 .sub_box,#SEARCH_ENGINE{
 	margin-bottom: 5px;
 	background: #fff;
 }
 
-/* 検索エンジン部分 */
+/* 検索エンジン */
 #SEARCH_ENGINE{
 	padding: 15px;
 }
@@ -108,7 +108,7 @@ input[type="image"]{
 	height:18px;
 }
 
-/*sub_box link_box設定*/
+/*sub_box link_box*/
 .sub_box h4,.link_box h4{
 	background: #887f69;
 	color: #fff;
@@ -168,10 +168,10 @@ input[type="image"]{
 	text-decoration:none;
 }
 .more_button a:hover{
-	opacity:0.7;
+	opacity:0.75;
 }
 
-/* ItemList部分の設定 */
+/* ItemList */
 .item_list  h2{
 	margin: 15px auto;
 }
@@ -188,15 +188,6 @@ input[type="image"]{
 	flex-direction:row;
 	flex-wrap: wrap;
 }
-
-#NEW_ITEMS_LIST li{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction:row;
-	flex-direction:row;
-	flex-wrap:  wrap;
-}
-
 #NEW_ITEMS_LIST li{
 	display: -webkit-flex;
 	display: flex;
@@ -206,7 +197,6 @@ input[type="image"]{
 }
 #POPULAR_ITEMS_LIST li, #WATCH_ITEMS_LIST li, #CATEGORIES_LIST li{
 	float:left;
-	list-style: none;
 }
 
 .item_list li a{
@@ -232,7 +222,7 @@ input[type="image"]{
 	margin-bottom:1rem;
 }
 
-/* Shopping Guide部分の設定 */
+/* Shopping Guide */
 #SHOPPING_GUIDE h2{
 	margin: 15px auto;
 }
@@ -285,7 +275,7 @@ input[type="image"]{
 	width:95%;
 }
 
-/* パンくずリスト部分の設定 */
+/* パンくずリスト */
 #PANK{
 	margin-bottom:10px;
 	padding:0 5px 1px;
@@ -330,7 +320,7 @@ input[type="image"]{
 	padding-right: 4px;
 }
 
-/* 前に戻る＆次へ進むボタンに関する設定 */
+/* ＮＥＸＴ　ＢＡＣＫアイコン */
 
 #PAGE_LIST_BUTTONS{
 	margin:15px 0 30px;
@@ -348,4 +338,141 @@ input[type="image"]{
 }
 #NEXT_BUTTON{
 	float:right;
+}
+
+/* 商品一覧ページ大枠 */
+#PRODUCTS_BOX{
+	background: #fff;
+	margin-bottom:30px;
+}
+#PRODUCTS_NAME{
+	padding:0 0 30px;
+	margin-bottom:20px;
+	font-size:1.4rem;
+	font-weight:bold;
+	border-bottom: 1px solid #e2ddd4;
+}
+#PRODUCTS_ID{
+	font-weight:normal;
+	font-size:1.1rem;
+	color: #b0b0b0;
+}
+
+/* 商品一覧ページ：ギャラリー部分 */
+#PRODUCTS_PICS{
+	margin-bottom: 20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #e2ddd4;
+}
+#PRODUCTS_PICS img{
+	width:100%;
+	display:block;
+}
+#PICT_LIST li img{
+	border:1px solid #fff;
+	border-top:none;
+}
+
+/* Form部分 */
+#CART_BOX{
+	border-bottom: 1px solid #e2ddd4;
+}
+
+#CART_BOX table,#CART_BOX tr,#CART_BOX th,#CART_BOX td{
+	border:1px solid #e2ddd4;
+}
+#CART_BOX table{
+	margin-top:20px;
+	width:100%;
+}
+#CART_BOX th,#CART_BOX td{
+	padding:10px 0;
+	text-align: center;
+}
+#CART_BOX th{
+	font-size: 1.3rem;
+	color:#998669;
+	font-weight: normal;
+	background:#f9f9f5;
+}
+#CART_BOX td input{
+	display:block;
+	margin:auto;
+}
+.form_wrap h3,.form_wrap div{
+	display:inline-block;
+	padding:10px 0 0;
+	margin-bottom:10px;
+}
+.form_wrap h3{
+	width:35%;
+}
+.form_wrap div{
+	width:62%;
+	white-space: nowrap;
+}
+#PRICE_DATA {
+	border-top: 1px solid #e2ddd4;
+	border-bottom: 1px solid #e2ddd4;
+}
+#PRICE_WRAP{
+	font-style: italic;
+}
+#PRICE_DATA strong{
+	color:#e80f66;
+	font-size:2rem;
+	font-weight:normal;
+}
+#PRICE_DATA span{
+	padding:0 5px;
+	font-size:1.3rem;
+}
+#QUANTITY_DATA{
+	margin-bottom:-15px;
+}
+#QUANTITY_DATA input{
+	width:100%;
+}
+#BTN_CART input{
+	width:225px;
+	height:55px;
+}
+#BTN_CART input:hover{
+	opacity: 0.75;
+}
+
+/* 商品説明部分 */
+
+#PRODUCTS_DETAIL table,#PRODUCTS_DETAIL tr,#PRODUCTS_DETAIL th,#PRODUCTS_DETAIL td{
+	border:1px solid #e2ddd4;
+}
+#PRODUCTS_DETAIL table{
+	margin-top:20px;
+	width:100%;
+}
+#PRODUCTS_DETAIL th,#PRODUCTS_DETAIL td{
+	padding:10px;
+	text-align: center;
+	font-size:1.2rem;
+}
+#PRODUCTS_DETAIL th{
+	font-size: 1.3rem;
+	color:#998669;
+	font-weight: normal;
+	background:#f9f9f5;
+	white-space: nowrap;
+}
+#PRODUCTS_DETAIL td{
+	text-align:left;
+}
+
+#PRODUCTS_DETAIL h2,#PRODUCTS_DETAIL h3{
+	font-size: 1.5rem;
+	color:#998669;
+	font-weight:bold;
+	margin:10px 0;
+	padding:10px 0;
+}
+#PRODUCTS_DETAIL h2{
+	border-bottom:1px solid #887f69;
 }
