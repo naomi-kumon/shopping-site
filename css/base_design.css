@@ -50,15 +50,9 @@ footer small{
 	color:#b8b4ac;
 }
 #PAGE_TOP{
-	font-weight:bold;
 	padding:20px 0;
 }
-#PAGE_TOP *{
-	font-size:1.4rem;
-}
-#PAGE_TOP i{
-	margin-right:10px;
-}
+
 footer ul{
 	margin:0 auto 20px;
 	text-align: center;
